@@ -16,8 +16,8 @@
     <nav id="navi">
       <img class="NaviLogo" href="/index" src="img/logo.png" align="left" height="52px">
       <ul class="MyContainer">
-		<input type="text" class="search" name="search" placeholder="Search..">
-        <img class="profileImg" type="button" href="#login" data-toggle="modal" data-target="#login" src="img/guest.png" height="40px">
+		<button class="btn btn-outline-secondary"><a href="#search">Search</a></button>
+        <img class="profileImg" type="button" href="#login" data-toggle="modal" data-target="#user" src="img/guest.png" height="40px">
         <li> <div aria-label="Left Align" class="Notifications"> <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> </div> </li>
        <!-- <c> Welcome, {{User}}</c> -->
       </ul>
@@ -36,7 +36,17 @@
 </ul>
 <div> </div> </div>
 <!--Side Menu END-->
-
+                    
+                    
+              
+  
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form>
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
 
 <!--MAIN CONTAINER-->
 <div class="mainContainer">
@@ -56,7 +66,7 @@ Vivamus tincidunt odio sed mauris vulputate efficitur. Phasellus egestas vulputa
 
 <!--MODALS-->
 <!-- Profile Modal -->
-    <div class="modal fade" id="login" role="dialog" ng-app="loginApp" ng-controller="loginController">
+    <div class="modal fade" id="user" role="dialog" ng-app="loginApp" ng-controller="loginController">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
