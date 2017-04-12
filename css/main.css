@@ -10,7 +10,7 @@
 
 	P, a{
 		font-family: 'Product Sans', Segoe UI, Trebuchet MS;
-	} 
+	}
 	.glyphicon.glyphicon-bell {
 	padding-right: 5px;
 	color:#ffffff;
@@ -36,9 +36,9 @@
 		position:absolute;
 		top:20px;
 		right:110px;
-	
+
 	}
-	
+
 	c{
 		position:absolute;
 		top:20px;
@@ -46,7 +46,7 @@
 		padding-left:20%;
 		font-weight:bold;
 	}
-	
+
 	.profileImg{
 		position:absolute;
 		top:10px;
@@ -70,7 +70,7 @@
 	.ProfilePicture:hover{
 		border:2px solid #ddd;
 	}
-	
+
 	input[type=text] {
 	min-width:130px;
     width: 30%;
@@ -90,18 +90,18 @@
 	input[type=text]:focus {
     width: 50%;
 	}
-	
+
 	.modal-dialog{
 		padding-top:100px;
 		position:fixed;
 	}
-	
+
 	.NaviLogo {
 	padding-left: 25px;
 	padding-top: 8px;
 	padding-right: 8px;
 	}
-		
+
 	#Logo {
 		padding-top:80px;
 		padding-bottom:2px;
@@ -151,7 +151,7 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-	
+
 	/* Nav */
 
 	#navi {
@@ -176,7 +176,7 @@
 			font-weight: 450;
 			padding-right:10px;
 		}
-			
+
 			.CredentialTags{
 				font-size:16px;
 				font-weight:600;
@@ -185,7 +185,7 @@
 				color:#1E1E1E;
 				text-decoration:none;
 			}
-			
+
 		.form{
 			text-align:center;
 		}
@@ -218,9 +218,9 @@
 			padding-top:25px;
 			margin-bottom: 0;
 		}
-		.sideMenu li{	
+		.sideMenu li{
 			color:#F4F4F4;
-			font-size:16px;	
+			font-size:16px;
 			display: inline-block;
 			border-radius: 0px;
 			padding-top:10px;
@@ -236,7 +236,7 @@
 		.sideMenu li:hover{
 			width:185px;
 		}
-		
+
 		.InicioFlag{
 			background-color: #757575;
 			color:#F4F4F4;
@@ -251,14 +251,14 @@
 			cursor: default;
 			box-shadow: 5px 5px #E8E8E8;
 		}
-		
+
 		.flag{
 			padding-top:0px;
 			padding-left:10px;
 			font-size:36px;
 			font-weight:200;
 		}
-		
+
 		.mainContainer{
 			margin-left:140px;
 			position:absolute;
@@ -275,7 +275,7 @@
 			box-shadow: 0px 0px 15px 3px rgba(173, 173, 173, 0.7);
 			-moz-box-shadow: 0px 0px 15px 3px rgba(173, 173, 173, 0.7);
 			-webkit-box-shadow: 0px 0px 15px 3px rgba(173, 173, 173, 0.7);
-		
+
 		}
 
 		#search {
@@ -285,7 +285,7 @@
 	    width: 100%;
 	    height: 100%;
 	    background-color: rgba(0, 0, 0, 0.7);
-	    
+
 	    -webkit-transition: all 0.5s ease-in-out;
 	  -moz-transition: all 0.5s ease-in-out;
 	  -o-transition: all 0.5s ease-in-out;
@@ -297,7 +297,7 @@
 	  -o-transform: translate(0px, -100%) scale(0, 0);
 	  -ms-transform: translate(0px, -100%) scale(0, 0);
 	  transform: translate(0px, -100%) scale(0, 0);
-	    
+
 	    opacity: 0;
 	}
 
@@ -307,7 +307,7 @@
 	    -moz-transform: translate(0px, 0px) scale(1, 1);
 	  -o-transform: translate(0px, 0px) scale(1, 1);
 	  -ms-transform: translate(0px, 0px) scale(1, 1);
-	  transform: translate(0px, 0px) scale(1, 1); 
+	  transform: translate(0px, 0px) scale(1, 1);
 	    opacity: 1;
 	}
 
@@ -345,4 +345,3 @@
 	  border-color: #357ebd;
 	  opacity: 1;
 	  padding: 10px 17px;
-			
