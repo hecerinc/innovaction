@@ -11,30 +11,14 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="js/core.js"></script>
-    <script src="js/transition.js"></script>
-    <script src="js/background.js"></script>
-    <script src="js/projecto.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-
-
-
     <title>Innovaction - Dashboard</title>
     <!-- Navigation Bar -->
     <nav id="navi">
       <img class="NaviLogo" href="/index" src="img/logo.png" align="left" height="52px">
       <ul class="MyContainer">
-        <img class="profileImg" type="button" href="#user" data-toggle="modal" data-target="#user" src="img/guest.png" height="40px">
-        <li> <div aria-label="Left Align" class="Notifications">
-        <a  class="glyphicon glyphicon-search" href="#search"></a>
-        <span class="glyphicon glyphicon-bell" aria-hidden="true">
-        </span>
-        </div>
-        </li>
+		<input type="text" class="search" name="search" placeholder="Search..">
+        <img class="profileImg" type="button" href="#login" data-toggle="modal" data-target="#login" src="img/guest.png" height="40px">
+        <li> <div aria-label="Left Align" class="Notifications"> <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> </div> </li>
        <!-- <c> Welcome, {{User}}</c> -->
       </ul>
     </nav>
@@ -43,33 +27,23 @@
 
 <!--Side Menu-->
 <div class="sideMenu">
-<ul>
-    <li onclick="location.href='home.html';" ><span class="glyphicon glyphicon-home" aria-hidden="true"></span> <b> &nbsp; </b> Inicio </li>
-    <li onclick="location.href='calendar.html';"><span class="glyphicon glyphicon-calendar"  aria-hidden="true"></span> <b> &nbsp; Calendario </b></li>
-    <li onclick="location.href='projects.html';"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> <b> &nbsp; Mis Proyectos </b></li>
-    <li onclick="location.href='documents.html';"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> <b> &nbsp; Documentos </b></li>
-    <li onclick="location.href='sessions.html';"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> <b> &nbsp; Sesiones </b></li>
-    <li onclick="location.href='team.html';"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <b> &nbsp; Social </b></li>
-</ul>
+    <ul>
+        <li onclick="location.href='dashboard.html';" ><span class="glyphicon glyphicon-home" aria-hidden="true"></span> <b> &nbsp; </b> Inicio </li>
+        <li onclick="location.href='calendar.html';"><span class="glyphicon glyphicon-calendar"  aria-hidden="true"></span> <b> &nbsp; Calendario </b></li>
+        <li onclick="location.href='projects.html';"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> <b> &nbsp; Mis Proyectos </b></li>
+        <li onclick="location.href='documents.html';"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> <b> &nbsp; Documentos </b></li>
+        <li onclick="location.href='sessions.html';"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> <b> &nbsp; Sesiones </b></li>
+        <li onclick="location.href='team.html';"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <b> &nbsp; Social </b></li>
+    </ul>
 <div> </div> </div>
 <!--Side Menu END-->
 
-
-
-
-<div id="search">
-    <button type="button" class="close">×</button>
-    <form>
-        <input type="search" value="" placeholder="type keyword(s) here" />
-        <button type="submit" class="btn btn-primary">Search</button>
-    </form>
-</div>
 
 <!--MAIN CONTAINER-->
 <div class="mainContainer">
 
 <div class="InicioFlag">
-<div class="flag"> <p>Inicio</p></div>
+<div class="flag"> <p>Sesiones</p></div>
 </div>
 
 <div class="Content">
@@ -83,7 +57,7 @@ Vivamus tincidunt odio sed mauris vulputate efficitur. Phasellus egestas vulputa
 
 <!--MODALS-->
 <!-- Profile Modal -->
-    <div class="modal fade" id="user" role="dialog" ng-app="loginApp" ng-controller="loginController">
+    <div class="modal fade" id="login" role="dialog" ng-app="loginApp" ng-controller="loginController">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
