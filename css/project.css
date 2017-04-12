@@ -208,109 +208,123 @@ footer{
   border-color: #357ebd;
   opacity: 1;
   padding: 10px 17px;
-  .social {
-    position: relative;
-    height: 3em;
-    width: 13.5em;
-    margin: 150px 450px;
 }
 
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
-h2{
-font-size: 55px;
-}
-.social {
-    position: relative;
-    height: 3em;
-    width: 13.5em;
-    margin: 150px 450px;
+.SocialContainer{
+  position: fixed;
+  left:10px;
+  top: 150px;
+  width: 60px;
 }
 
-.social li {
-    display: block;
-    height: 4em;
-    line-height: 4em;
-    margin: -2.2em;
-    position: absolute;
-    -webkit-transition: -webkit-transform .7s;
-    -moz-transition: -moz-transform .7s;
-    -ms-transition: -ms-transform .7s;
-    -o-transition: -o-transform .7s;
-    transition: transform .7s;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+a.btn-social,
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
     text-align: center;
-    width: 4em;
-
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
 }
 
-.social a {
-    color: #fffdf0;
-    display: block;
-    height: 4em;
-    line-height: 6em;
-    text-align: center;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 4em; 
-  
+.btn-social .fa,.btn-social i
+{
+    backface-visibility: hidden;
+    moz-backface-visibility: hidden;
+    ms-transform: scale(1);
+    o-transform: scale(1);
+    transform: scale(1);
+    transition: all .25s;
+    webkit-backface-visibility: hidden;
+    webkit-transform: scale(1);
+    webkit-transition: all .25s;
+}
+.btn-social:hover,.btn-social:focus
+{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+.btn-social:hover .fa,.btn-social:focus .fa,.btn-social:hover i,.btn-social:focus i
+{
+    ms-transform: scale(1.3);
+    o-transform: scale(1.3);
+    transform: scale(1.3);
+    webkit-transform: scale(1.3);
+}
+.btn-social.btn-xs
+{
+    font-size: 9px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+}
+.btn-social.btn-sm
+{
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+}
+.btn-social.btn-lg
+{
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
 }
 
-.social li:hover {
-  -webkit-transform: scale(1.3,1.3) rotate(45deg);
-    -moz-transform: scale(1.3,1.3) rotate(45deg);
-  -ms-transform: scale(1.3,1.3) rotate(45deg);
-    -o-transform: scale(1.3,1.3) rotate(45deg);
-  transform: scale(1.3,1.3) rotate(45deg);
+.btn-facebook
+{
+    background-color: #3b5998;
+}
+.btn-facebook:hover
+{
+    background-color: #4c70ba;
+}
+.btn-google-plus
+{
+    background-color: #dd4b39;
+}
+.btn-google-plus:hover
+{
+    background-color: #e47365;
+}
+.btn-twitter
+{
+    background-color: #55acee;
+}
+.btn-twitter:hover
+{
+    background-color: #83c3f3;
+}
+.btn-youtube
+{
+    background-color: #e52d27;
+}
+.btn-youtube:hover
+{
+    background-color: #ea5955;
+}
+.btn-email
+{
+    background-color: #44c456;
+}
+.btn-email:hover
+{
+    background-color: #6bd079;
 }
 
-.facebook {
-    background: #155b9d;
-    left: 0;
-    top: 0%;
-}
 
-.twitter {
-    background: #1a9ec4;
-    bottom: 0;
-    left: 25%;
-}
-.facebook2 {
-    background: #155b9d;
-    left: 50%;
-    top: 0%;
-}
-
-.twitter2 {
-    background: #1a9ec4;
-    bottom: 0;
-    left: 25%;
-}
-
-.pinterest {
-    background: #e11a30;
-    left: 50%;
-    top: 0%;
-}
-.behance {
-    background: #3f7aa3;
-    bottom: 0;
-    left: 75%;
-}
-.behance2 {
-    background: #3f7aa3;
-    top: 0%;
-    left: 50%;
-}
-.behance3 {
-    background: #3f7aa3;
-    bottom: 0;
-    left: 75%;
-}
 
