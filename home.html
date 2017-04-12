@@ -11,14 +11,30 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    <script src="js/core.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/projecto.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
     <title>Innovaction - Dashboard</title>
     <!-- Navigation Bar -->
     <nav id="navi">
       <img class="NaviLogo" href="/index" src="img/logo.png" align="left" height="52px">
       <ul class="MyContainer">
-		<button class="btn btn-outline-secondary"><a href="#search">Search</a></button>
-        <img class="profileImg" type="button" href="#login" data-toggle="modal" data-target="#user" src="img/guest.png" height="40px">
-        <li> <div aria-label="Left Align" class="Notifications"> <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> </div> </li>
+        <img class="profileImg" type="button" href="#user" data-toggle="modal" data-target="#user" src="img/guest.png" height="40px">
+        <li> <div aria-label="Left Align" class="Notifications"> 
+        <a  class="glyphicon glyphicon-search" href="#search"></a>
+        <span class="glyphicon glyphicon-bell" aria-hidden="true">
+        </span> 
+        </div> 
+        </li>
        <!-- <c> Welcome, {{User}}</c> -->
       </ul>
     </nav>
