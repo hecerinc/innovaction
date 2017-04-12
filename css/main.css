@@ -8,12 +8,11 @@
 		background-color: #F4F4F4;
 	}
 
-	P, a{
+	P, a, c{
 		font-family: 'Product Sans', Segoe UI, Trebuchet MS;
-<<<<<<< HEAD
 	} 
 	.glyphicon.glyphicon-plus {
-	padding-right: 5px;
+	padding-right: 12px;
 	color:#ffffff;
     font-size: 26px;
 	}
@@ -21,11 +20,84 @@
     font-size: 26px;
 	color:#dddddd;
 	transition:all 0.2s linear;
-=======
->>>>>>> origin/master
 	}
+	.glyphicon.glyphicon-plus .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: relative;
+    font-size: 16px;
+    right:120px;
+    top: -8px;
+    z-index: 1;
+	}
+	.glyphicon.glyphicon-plus:hover .tooltiptext {
+    visibility: visible;
+	}
+
+	.glyphicon.glyphicon-globe {
+	padding-right: 120px;
+	color:#ffffff;
+    font-size: 26px;
+	}
+	.glyphicon.glyphicon-globe:hover {
+    font-size: 26px;
+	color:#dddddd;
+	transition:all 0.2s linear;
+	}
+	.glyphicon.glyphicon-globe .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: relative;
+    font-size: 16px;
+    left:20px;
+    top: -8px;
+    z-index: 1;
+	}
+	.glyphicon.glyphicon-globe:hover .tooltiptext {
+    visibility: visible;
+	}
+
+	.glyphicon.glyphicon-home {
+	padding-right: 12px;
+	color:#ffffff;
+    font-size: 26px;
+	}
+	.glyphicon.glyphicon-home:hover {
+    font-size: 26px;
+	color:#dddddd;
+	transition:all 0.2s linear;
+	}
+	.glyphicon.glyphicon-home .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: relative;
+    font-size: 16px;
+    left:20px;
+    top: -8px;
+    z-index: 1;
+	}
+	.glyphicon.glyphicon-home:hover .tooltiptext {
+    visibility: visible;
+	}
+
+	
 	.glyphicon.glyphicon-bell {
-	padding-right: 5px;
+	padding-right: 12px;
 	color:#ffffff;
     font-size: 26px;
 	}
@@ -35,7 +107,7 @@
 	transition:all 0.2s linear;
 	}
 	.glyphicon.glyphicon-search {
-	padding-right: 5px;
+	padding-right: 12px;
 	text-decoration: none;
 	color:#ffffff;
     font-size: 26px;
@@ -49,7 +121,6 @@
 		position:absolute;
 		top:20px;
 		right:110px;
-
 	}
 
 	c{
