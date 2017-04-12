@@ -216,6 +216,15 @@ footer{
 }
 
 
+h2{
+font-size: 55px;
+}
+.social {
+    position: relative;
+    height: 3em;
+    width: 13.5em;
+    margin: 150px 450px;
+}
 
 .social li {
     display: block;
@@ -302,3 +311,6 @@ footer{
 .behance3 {
     background: #3f7aa3;
     bottom: 0;
+    left: 75%;
+}
+

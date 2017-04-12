@@ -11,6 +11,16 @@
 	P, a{
 		font-family: 'Product Sans', Segoe UI, Trebuchet MS;
 	} 
+	.glyphicon.glyphicon-plus {
+	padding-right: 5px;
+	color:#ffffff;
+    font-size: 26px;
+	}
+	.glyphicon.glyphicon-plus:hover {
+    font-size: 26px;
+	color:#dddddd;
+	transition:all 0.2s linear;
+	}
 	.glyphicon.glyphicon-bell {
 	padding-right: 5px;
 	color:#ffffff;
