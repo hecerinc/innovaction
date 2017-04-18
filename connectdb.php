@@ -1,5 +1,5 @@
 <?php
-function connectDB($server = "localhost", $user = "sic", $pass = "infosys", $db = "mainsite"){
+function connectDB($server = "localhost", $user , $pass, $db = "mainsite"){
 	$conn = new mysqli($server, $user, $pass, $db);
 
 	if($conn->connect_error)
