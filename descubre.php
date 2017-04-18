@@ -102,8 +102,9 @@ mysqli_close($connect);
 					<div class="resp">
 						<?php while($row = mysqli_fetch_assoc($result)):  ?>
 							<div class="card">
-								<img  width="360" height="350" src="img/Black.jpg" alt="Card image cap">
-								<p class="card-text"><?= $row['description'] ?></p>
+								<h4><?= $row['Titulo'] ?></h4>
+								<img  width="360" height="350" src="http://lorempixel.com/500/500/sports" alt="Card image cap">
+								<p class="card-text"><?= $row['Descripcion'] ?></p>
 							</div>
 						<?php endwhile; ?>
 					</div>
@@ -113,109 +114,48 @@ mysqli_close($connect);
 
 		<!-- Page Changer -->
 		<div class="page-changer">
-			<center>
-				<img  width="500" height="50" src=img/logo.png border=0>
-			</center>
-				<div id="foot" role="navigation">
-						<div data-jibp="h" data-jiis="uc" id="cljs"></div>
-						<span data-jibp="h" data-jiis="uc" id="xjs">
-								<table style="border-collapse:collapse;text-align:left;margin:30px auto 30px" id="nav" role="presentation">
-										<tr valign="top">
-												<td class="b navend">
-														<span class="csb" </span></td>
-												<td class="cur">
-													<td>
-														<button type="button" aria-label="Page 1" class="btn btn-outline-primary" > 1 </button>
-														</td>
-												<td>
-													<button type="button" aria-label="Page 2" class="btn btn-outline-primary" > 2 </button>
-													</td>
-												<td>
-														<button type="button" aria-label="Page 3" class="btn btn-outline-primary" > 3 </button>
-														</td>
-												<td>
-													<button type="button" aria-label="Page 4" class="btn btn-outline-primary" > 4 </button>
-													</td>
-												<td>
-														<button type="button" aria-label="Page 5" class="btn btn-outline-primary" > 5 </button>
-														</td>
-												<td>
-													<button type="button" aria-label="Page 6" class="btn btn-outline-primary" > 6 </button>
-													</td>
-												<td>
-														<button type="button" aria-label="Page 7" class="btn btn-outline-primary" > 7 </button>
-														</td>
-												<td>
-															<button type="button" aria-label="Page 8" class="btn btn-outline-primary" > 8 </button>
-															</td>
-												<td>
-														<button type="button" aria-label="Page 9" class="btn btn-outline-primary" > 9 </button>
-														</td>
-												<td>
-														<button type="button" aria-label="Page 10" class="btn btn-outline-primary" > 10 </button>
-														</td>
-												<td class="b navend"><button type="button" aria-label="Next" class="btn btn-outline-primary" > Next </button></td>
-										</tr>
-								</table>
-						</span>
-						<div data-jibp="h" data-jiis="uc" id="gfn"><style>#foot{visibility:inherit}</style></div><span data-jibp="h" data-jiis="uc" id="fvf"></span></div>
+			<img  width="500" height="50" src=img/logo.png border=0 />
+			<div id="foot" role="navigation">
+				<div data-jibp="h" data-jiis="uc" id="cljs"></div>
+				<span data-jibp="h" data-jiis="uc" id="xjs">
+					<table style="border-collapse:collapse;text-align:left;margin:30px auto 30px" id="nav" role="presentation">
+						<tr valign="top">
+							<td class="b navend"> <span class="csb" </span></td> <td class="cur">
+							<td> <button type="button" aria-label="Page 1" class="btn btn-outline-primary" > 1 </button> </td>
+							<td> <button type="button" aria-label="Page 2" class="btn btn-outline-primary" > 2 </button> </td>
+							<td> <button type="button" aria-label="Page 3" class="btn btn-outline-primary" > 3 </button> </td>
+							<td> <button type="button" aria-label="Page 4" class="btn btn-outline-primary" > 4 </button> </td>
+							<td> <button type="button" aria-label="Page 5" class="btn btn-outline-primary" > 5 </button> </td>
+							<td> <button type="button" aria-label="Page 6" class="btn btn-outline-primary" > 6 </button> </td>
+							<td> <button type="button" aria-label="Page 7" class="btn btn-outline-primary" > 7 </button> </td>
+							<td> <button type="button" aria-label="Page 8" class="btn btn-outline-primary" > 8 </button> </td>
+							<td> <button type="button" aria-label="Page 9" class="btn btn-outline-primary" > 9 </button> </td>
+							<td> <button type="button" aria-label="Page 10" class="btn btn-outline-primary" > 10 </button> </td>
+							<td class="b navend"><button type="button" aria-label="Next" class="btn btn-outline-primary" > Next </button></td>
+						</tr>
+					</table>
+				</span>
+				<div data-jibp="h" data-jiis="uc" id="gfn">
+					<style>#foot{visibility:inherit}</style>
 				</div>
-
-		<!-- Page Changer antiguo
-		<div class="page-changer">
-				<div id="foot" role="navigation">
-						<div data-jibp="h" data-jiis="uc" id="cljs"></div>
-						<span data-jibp="h" data-jiis="uc" id="xjs">
-								<table style="border-collapse:collapse;text-align:left;margin:30px auto 30px" id="nav" role="presentation">
-										<tr valign="top">
-												<td class="b navend">
-														<span class="csb" </span></td>
-												<td class="cur">
-														<span class="csb" </span>1</td>
-												<td><a aria-label="Page 2" class="fl" href="">
-														<span class="csb ch" </span>2</a></td>
-												<td><a aria-label="Page 3" class="fl" href="">
-														<span class="csb ch" </span>3</a></td>
-												<td><a aria-label="Page 4" class="fl" href="">
-														<span class="csb ch" </span>4</a></td>
-												<td><a aria-label="Page 5" class="fl" href="">
-														<span class="csb ch" </span>5</a></td>
-												<td><a aria-label="Page 6" class="fl" href="">
-														<span class="csb ch" </span>6</a></td>
-												<td><a aria-label="Page 7" class="fl" href="">
-														<span class="csb ch" </span>7</a></td>
-												<td><a aria-label="Page 8" class="fl" href="">
-														<span class="csb ch" </span>8</a></td>
-												<td><a aria-label="Page 9" class="fl" href="">
-														<span class="csb ch" </span>9</a></td>
-												<td><a aria-label="Page 10" class="fl" href="">
-														<span class="csb ch" </span>10</a></td>
-												<td class="b navend"><a class="pn" href="" id="pnnext" </span>
-														<span style="display:block;margin-left:53px">Next</span></a></td>
-										</tr>
-								</table>
-						</span>
-				<div data-jibp="h" data-jiis="uc" id="gfn"><style>#foot{visibility:inherit}</style></div><span data-jibp="h" data-jiis="uc" id="fvf"></span></div>
+				<span data-jibp="h" data-jiis="uc" id="fvf"></span>
+			</div>
 		</div>
-		-->
 
 		<footer id="footer" class=''>
 			<div class="container">
 				<div class='row'>
 					<div class="content">
-
-				ITESM Campus Monterrey
-				<br></br>
-				Av. Eugenio Garza Sada 2501 Sur,
-				Tecnológico,  64849 Monterrey, N.L.
-				<br></br>
-				Edificio CETEC, Piso no.2
-				<br></br>
-				innovaction@gmail.com
-				<br></br>
-				+52 (81) 1516 1718
-
-
+						ITESM Campus Monterrey
+						<br></br>
+						Av. Eugenio Garza Sada 2501 Sur,
+						Tecnológico,  64849 Monterrey, N.L.
+						<br></br>
+						Edificio CETEC, Piso no.2
+						<br></br>
+						innovaction@gmail.com
+						<br></br>
+						+52 (81) 1516 1718
 					</div>
 				</div>
 			</div><!-- /.container -->

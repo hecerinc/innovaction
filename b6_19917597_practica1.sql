@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `Departamentos` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS `Proyectos` (
-  `IdProyecto` int(11) NOT NULL AUTO_INCREMENT,
+  `IdProyecto` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `Titulo` varchar(50) NOT NULL,
   `Descripcion` text NOT NULL,
   `FInicio` date NOT NULL,
@@ -51,6 +51,13 @@ CREATE TABLE IF NOT EXISTS `Proyectos` (
   FOREIGN KEY (`IdCampus`) REFERENCES Ubicacion(`IdCampus`),
   UNIQUE (`Titulo`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- INSERT INTO proyectos(Titulo, Descripcion, FInicio, Duracion, IdCampus, Ocupa) VALUES
+-- ('Proyecto 1', 'Descripcion del proyecto', '2015-08-23', 20, 'MTY', 10),
+-- ('Proyecto 2', 'Descripcion del proyecto', '2015-08-23', 20, 'MTY', 10),
+-- ('Proyecto 3', 'Descripcion del proyecto', '2015-08-23', 20, 'MTY', 10),
+-- ('Proyecto 4', 'Descripcion del proyecto', '2015-08-23', 20, 'MTY', 10),
+-- ('Proyecto 5', 'Descripcion del proyecto', '2015-08-23', 20, 'MTY', 10) ;
 
 CREATE TABLE IF NOT EXISTS `Archivos` (
   `IdArchivo` int(11) NOT NULL AUTO_INCREMENT,
