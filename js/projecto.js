@@ -15,14 +15,14 @@ $( document ).ready(function() {
 
     
     
-    $("header.video").background({
-        source: {
-            poster: "img/bg-mobile-fallback.jpg",
-            mp4: "mp4/semanailast.mp4"
-        }
+    // $("header.video").background({
+    //     source: {
+    //         poster: "img/bg-mobile-fallback.jpg",
+    //         mp4: "mp4/semanailast.mp4"
+    //     }
         
 
-    });
+    // });
 
     
 });

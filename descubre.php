@@ -17,9 +17,9 @@ $query = "SELECT * FROM proyectos";
 $connect = connectDB("localhost", "root", "", "innovaction");
 // Ejecuto el query
 
-$result = mysqli_query($connect, $query);
+$result = $connect->query($query);
 
-mysqli_close($connect);
+$connect->close();
 
 
  ?>
@@ -100,11 +100,12 @@ mysqli_close($connect);
 			<div class="container">
 				<div class="row">
 					<div class="resp">
-						<?php while($row = mysqli_fetch_assoc($result)):  ?>
-							<div class="card">
+						<?php while($row = mysqli_fetch_assoc($result)): ?>
+							<div class="card proyecto" id="<?= $row['IdProyecto'] ?>">
 								<h4><?= $row['Titulo'] ?></h4>
 								<img  width="360" height="350" src="http://lorempixel.com/500/500/sports" alt="Card image cap">
 								<p class="card-text"><?= $row['Descripcion'] ?></p>
+								<a href="#" rel="<?= $row['IdProyecto'] ?>" class="delete-btn">Delete this project</a>
 							</div>
 						<?php endwhile; ?>
 					</div>
@@ -165,17 +166,35 @@ mysqli_close($connect);
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="js/projecto.js"></script>
 		<script src="../../assets/js/vendor/holder.min.js"></script>
 		<script>
-			$(function () {
-				Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
-			});
+			// $(function () {
+			// 	Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+			// });
 		</script>
 		<script src="../../dist/js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script>
+			$(function() {
+				console.log('hello');
+				$('a.delete-btn').click(function(e){
+					e.preventDefault();
+					var projectid = $(this).attr('rel');
+					$.post('deleteproject.php', {id: projectid}, function(response){
+						if(response.success) {
+							// delete the DOM node
+							$('.proyecto#'+projectid).fadeOut();
+						}
+						else {
+							alert(response.msg);
+						}
+					}, 'json');
+				});
+			});
+		</script>
 	</body>
 </html>
